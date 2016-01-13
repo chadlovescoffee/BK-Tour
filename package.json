@@ -1,0 +1,7 @@
+{
+  "name" : "bk_tour",
+  "version": "1.0",
+  "main": "bk_tour.js",
+  "style" : "*.scss",
+  "transforms" : [ "sass-css-stream" ]
+}

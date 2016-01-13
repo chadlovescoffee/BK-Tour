@@ -1,0 +1,75 @@
+@import 'mixins.scss';
+
+
+.bk_tour {
+
+  .concert {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #000;
+
+    .date {
+      text-align: center;
+      @include column(10%);
+    }
+
+    .details {
+      padding-left: 1em;
+      text-transform: uppercase;
+      @include column(70%);
+
+      @include screen(768px){
+        width: 80%;
+      }
+
+
+      .location {
+        @include screen(768px) {
+          @include column(50%);
+        }
+        @include screen(1024px) {
+          @include column(70%);
+        }
+
+        .city {
+          @include screen(1024px) {
+            @include column(50%);
+          }
+
+          h3 {
+            line-height: 100%;
+          }
+        }
+
+        .venue {
+          font-size: 1.2em;
+          @include screen(1024px) {
+            @include column(50%);
+          }
+        }
+      }
+
+
+      .event {
+        font-size: 1.2em;
+        @include screen(768px) {
+          @include column(50%);
+        }
+        @include screen(1024px) {
+          @include column(30%);
+        }
+
+      }
+
+    }
+
+    .tickets {
+      text-align: right;
+      @include column(20%);
+      @include screen(768px) {
+        @include column(10%);
+        text-align: center;
+      }
+    }
+  }
+}
